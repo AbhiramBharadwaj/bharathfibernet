@@ -392,82 +392,154 @@
 
 ***/
 
-.appointment-section{
-	position:relative;
-	padding:55px 0px 30px;
-	background-position:right top;
-	background-repeat:no-repeat;
-	background-color:var(--main-color-two);
+
+
+.appointment-section {
+    position: relative;
+    padding: 60px 0 40px;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-color: var(--main-color-two);
 }
 
-.appointment-section .title-column{
-	position:relative;
-	margin-bottom:var(--margin-bottom-20);
+/* Title */
+.appointment-section .title-column {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-.appointment-section .title-column .inner-column{
-	position:relative;
+.appointment-section .title-column h3 {
+    color: #fff;
+    font-size: 52px;       /* similar to your slider h1 */
+    line-height: 1.2em;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
-.appointment-section .title-column h3{
-	color:var(--white-color);
+.appointment-section .title-column p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 18px;
+    font-weight: 400;
 }
 
-.appointment-section .form-column{
-	position:relative;
-	margin-bottom:var(--margin-bottom-20);
+/* Form Column */
+.appointment-section .form-column {
+    position: relative;
+    margin-bottom: 30px;
 }
 
-.appointment-section .form-column .inner-column{
-	position:relative;
-	padding-top:var(--padding-top-20);
-}
-
-.appointment-section.style-two{
-	background-color:var(--main-color);
-}
-
-.appointment-section.style-two .appointment-form .form-group button{
-	padding:13px 40px 13px;
+.appointment-section .form-column .inner-column {
+    position: relative;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 8px;
 }
 
 /* Appointment Form */
-
-.appointment-form{
-	position:relative;
+.appointment-form {
+    position: relative;
 }
 
-.appointment-form .form-group{
-	position:relative;
-	display:block;
-	padding-right:var(--padding-right-260);
-	margin-bottom:var(--margin-zero);
+.appointment-form .form-group {
+    position: relative;
+    display: block;
+    margin-bottom: 20px; /* spacing between fields */
+    padding-right: 0;
 }
 
 .appointment-form .form-group input[type="text"],
-.appointment-form .form-group input[type="email"]{
-	position:relative;
-	display:block;
-	width:100%;
-	height:56px;
-	font-size:15px;
-	line-height:26px;
-	color:var(--dark-color);
-	padding:10px 20px 10px 25px;
-	border-radius:3px;
-	background:var(--white-color);
-	-webkit-transition:all 300ms ease;
-	-ms-transition:all 300ms ease;
-	-o-transition:all 300ms ease;
-	-moz-transition:all 300ms ease;
-	transition:all 300ms ease;	
+.appointment-form .form-group input[type="email"] {
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background: var(--white-color);
+    transition: all 300ms ease;
+    margin-bottom: 10px;
 }
 
-.appointment-form .form-group button{
-	position:absolute;
-	right:0px;
-	top:0px;
+.appointment-form .form-group input[type="text"]:focus,
+.appointment-form .form-group input[type="email"]:focus {
+    border-color: var(--main-color);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 }
+
+/* Submit Button */
+.appointment-form .form-group button {
+    position: relative;
+    width: 100%;
+    padding: 14px 25px;
+    font-size: 16px;
+    border-radius: 6px;
+    background: #e50914;
+    color: #fff;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.appointment-form .form-group button:hover {
+    background: #b00710;
+}
+
+/* Slider Labels */
+.form-group.d-flex span {
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff; /* white */
+}
+
+/* Selected Speed & Price */
+#speedValue, #priceValue {
+    color: #fff !important; 
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Paragraphs around speed/price */
+.appointment-form p {
+    color: #fff;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Slider Styling */
+#speedRange {
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    background: #fff;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+#speedRange::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #e50914;
+    cursor: pointer;
+}
+
+#speedRange::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #e50914;
+    cursor: pointer;
+}
+
 
 /*** 
 

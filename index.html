@@ -566,47 +566,129 @@
       </section>
       <!-- End Main Section -->
 
-      <!-- Appointment Section -->
-      <section
-        class="appointment-section"
-        style="background-image: url(images/background/pattern-1.png)"
-      >
-        <div class="auto-container">
-          <div class="row clearfix">
-            <!-- Title Column -->
-            <div class="title-column col-lg-6 col-md-12 col-sm-12">
-              <div class="inner-column">
-                <h3>Ready to Transform Your Digital Infrastructure?</h3>
-              </div>
-            </div>
+<!-- Appointment Section -->
+<section
+  class="appointment-section"
+  style="background-image: url(images/background/pattern-1.png)"
+>
+  <div class="auto-container">
+    <div class="row clearfix justify-content-center text-center">
+      <!-- Title Column -->
+      <div class="title-column col-lg-8 col-md-12 col-sm-12">
+        <div class="inner-column">
+          <h3>Choose Your Internet Leased Line Plan</h3>
+          <p>Move the slider to select your bandwidth and see pricing instantly.</p>
+        </div>
+      </div>
 
-            <!-- Form Column -->
-            <div class="form-column col-lg-6 col-md-12 col-sm-12">
-              <div class="inner-column">
-                <div class="appointment-form">
-                  <form method="post" action="contact.html">
-                    <div class="form-group">
-                      <input
-                        type="email"
-                        name="email"
-                        value=""
-                        placeholder="Enter street address & apartment"
-                        required=""
-                      />
-                      <button type="submit" class="theme-btn btn-style-two">
-                        <span class="txt"
-                          >Check Availability <i class="lnr lnr-arrow-right"></i
-                        ></span>
-                      </button>
-                    </div>
-                  </form>
-                </div>
+      <!-- Form Column -->
+      <div class="form-column col-lg-8 col-md-12 col-sm-12">
+        <div class="inner-column">
+          <div class="appointment-form">
+            <form method="post" action="contact.html">
+              <!-- Bandwidth Slider -->
+              <div class="form-group">
+                <input 
+                  type="range" 
+                  id="speedRange" 
+                  min="1" 
+                  max="6" 
+                  step="1" 
+                  value="1" 
+                  class="w-100"
+                />
               </div>
-            </div>
+
+              <!-- Slider Labels -->
+              <div class="form-group d-flex justify-content-between">
+                <span>100 Mbps</span>
+                <span>200 Mbps</span>
+                <span>300 Mbps</span>
+                <span>400 Mbps</span>
+                <span>500 Mbps</span>
+                <span>1 Gbps</span>
+              </div>
+
+              <!-- Selected Values -->
+              <div class="form-group">
+                <p>
+                  Selected Speed: <strong><span id="speedValue">100 Mbps</span></strong>
+                </p>
+                <p>
+                  Monthly Price: <strong id="priceValue">₹20,000</strong>
+                </p>
+              </div>
+
+              <!-- User Inputs -->
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="mobile"
+                  placeholder="Mobile Number"
+                  required=""
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email Address"
+                  required=""
+                />
+              </div>
+
+              <!-- Hidden Bandwidth -->
+              <input type="hidden" name="bandwidth" id="bandwidthInput" value="100 Mbps" />
+
+              <!-- Submit -->
+              <div class="form-group">
+                <button type="submit" class="theme-btn btn-style-two">
+                  <span class="txt">Get Special Offer <i class="lnr lnr-arrow-right"></i></span>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
-      </section>
-      <!-- End Appointment Section -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Appointment Section -->
+
+<!-- Slider Script -->
+<script>
+  const speedRange = document.getElementById("speedRange");
+  const speedValue = document.getElementById("speedValue");
+  const priceValue = document.getElementById("priceValue");
+  const bandwidthInput = document.getElementById("bandwidthInput");
+
+  // Define available plans
+  const plans = {
+    1: { speed: "100 Mbps", price: 20000 },
+    2: { speed: "200 Mbps", price: 30000 },
+    3: { speed: "300 Mbps", price: 40000 },
+    4: { speed: "400 Mbps", price: 45000 },
+    5: { speed: "500 Mbps", price: 50000 },
+    6: { speed: "1 Gbps", price: 80000 }
+  };
+
+  function updatePlan(value) {
+    const plan = plans[value];
+    speedValue.textContent = plan.speed;
+    priceValue.textContent = "₹" + plan.price.toLocaleString();
+    bandwidthInput.value = plan.speed;
+  }
+
+  // Init
+  updatePlan(speedRange.value);
+
+  // On change
+  speedRange.addEventListener("input", function () {
+    updatePlan(this.value);
+  });
+</script>
+
+
 
       <!-- Services Section -->
       <section
