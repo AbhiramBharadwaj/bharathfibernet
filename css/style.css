@@ -177,6 +177,29 @@
 	display:none;
 }
 
+/* First slider (3 slides) */
+.main-slider h1 {
+  font-size: 42px;    /* adjust as needed */
+  line-height: 1.3em;
+  font-weight: 700;
+}
+
+/* Second slider type */
+.main-slider-two h1 {
+  font-size: 42px;    /* adjust as needed */
+  line-height: 1.3em;
+  font-weight: 700;
+}
+
+/* Responsive: smaller on mobile */
+@media screen and (max-width: 768px) {
+  .main-slider h1,
+  .main-slider-two h1 {
+    font-size: 28px;
+    line-height: 1.4em;
+  }
+}
+
 /*** 
 
 ====================================================================

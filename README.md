@@ -1,6 +1,6 @@
-# Bharath VoIP Website
+# BHARAT VoIP Website
 
-A modern, responsive static website template for **Bharath VoIP**, an enterprise IT & digital connectivity solutions provider.  
+A modern, responsive static website template for **BHARAT VoIP**, an enterprise IT & digital connectivity solutions provider.  
 This site showcases services, pricing, e-commerce integration, and blog functionality tailored for telecom and enterprise clients.
 
 ---
@@ -43,7 +43,7 @@ This site showcases services, pricing, e-commerce integration, and blog function
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/AbhiramBharadwaj/bharathfibernet.git
+   git clone https://github.com/AbhiramBharadwaj/BHARATfibernet.git
    live-server index.html
 
 <img width="1512" height="864" alt="image" src="https://github.com/user-attachments/assets/b281460c-c1f4-4687-a375-f696bdc553c2" />
