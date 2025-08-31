@@ -432,7 +432,7 @@
                     <ul class="list-style-one">
                       <li>
                         <span class="icon fa fa-location-arrow"></span>
-                        Jyothi Flora, 4th Floor, Kavuri Hills <br />
+                        Jyothi Flora, 4th Floor, Kavuri Hills,  <br />
                         Phase 2, Madhapur, Hyderabad, Telangana 500081
                       </li>
                       <li>
@@ -536,49 +536,101 @@
 </section>
 <!-- End Internet Section -->
 
+<!-- Appointment Section -->
+<section
+  class="appointment-section"
+  style="background-image: url(images/background/pattern-1.png)"
+>
+  <div class="auto-container">
+    <div class="row clearfix">
+      <!-- Title Column -->
+      <div class="title-column col-lg-6 col-md-12 col-sm-12">
+        <div class="inner-column">
+          <h3>LET'S FIND DEALS AND SERVICES AVAILABLE IN YOUR AREA</h3>
+        </div>
+      </div>
 
-
-      <!-- Appointment Section -->
-      <section
-        class="appointment-section"
-        style="background-image: url(images/background/pattern-1.png)"
-      >
-        <div class="auto-container">
-          <div class="row clearfix">
-            <!-- Title Column -->
-            <div class="title-column col-lg-6 col-md-12 col-sm-12">
-              <div class="inner-column">
-                <h3>Let's find deals and services available in your area</h3>
+      <!-- Form Column -->
+      <div class="form-column col-lg-6 col-md-12 col-sm-12">
+        <div class="inner-column">
+          <div class="appointment-form">
+            <form method="post" action="contact.html">
+              <!-- Address Input -->
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="address"
+                  placeholder="Enter street address & apartment"
+                  required
+                />
               </div>
-            </div>
 
-            <!-- Form Column -->
-            <div class="form-column col-lg-6 col-md-12 col-sm-12">
-              <div class="inner-column">
-                <div class="appointment-form">
-                  <form method="post" action="contact.html">
-                    <div class="form-group">
-                      <input
-                        type="email"
-                        name="email"
-                        value=""
-                        placeholder="Enter street address & apartment"
-                        required=""
-                      />
-                      <button type="submit" class="theme-btn btn-style-two">
-                        <span class="txt"
-                          >Check Availability <i class="lnr lnr-arrow-right"></i
-                        ></span>
-                      </button>
-                    </div>
-                  </form>
-                </div>
+              <!-- Phone Number Input -->
+              <div class="form-group">
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                  required
+                  pattern="[0-9]{10,15}"
+                  title="Please enter a valid phone number (10-15 digits)"
+                />
               </div>
-            </div>
+
+              <!-- Submit Button -->
+              <div class="form-group">
+                <button type="submit" class="theme-btn btn-style-two">
+                  <span class="txt">
+                    Check Availability <i class="lnr lnr-arrow-right"></i>
+                  </span>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
-      </section>
-      <!-- End Appointment Section -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CSS Fix -->
+<style>
+  .appointment-form .form-group {
+    margin-bottom: 15px;
+  }
+
+  .appointment-form input {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
+
+  .appointment-form input:focus {
+    border: 2px solid #e30613; /* red border highlight */
+  }
+
+  .appointment-form button {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: #e30613; /* red button */
+    color: #fff;
+    transition: 0.3s;
+  }
+
+  .appointment-form button:hover {
+    background: #b1050f; /* darker red on hover */
+  }
+</style>
+
 
       <!-- Faq Section -->
 <section
@@ -1021,14 +1073,15 @@
                   ><img src="images/icons/icon-2.png" alt=""
                 /></span>
                 <a href="mailto:info@bharatvoip.com">info@bharatvoip.com</a><br />
-                <a href="www.BHARATfibernet.com">www.BHARATfibernet.com</a>
+                <a href="www.bharatfibernet.com">www.bharatfibernet.com</a>
               </li>
               <li>
                 <span class="icon"
                   ><img src="images/icons/icon-3.png" alt=""
                 /></span>
-                503 Old Buffalo Street <br />
-                Northwest #205, New York-3087
+                Jyothi Flora, 4th Floor, Kavuri Hills,<br> Phase 2, Madhapur,<br />
+        
+        Hyderabad, Telangana – 500081
               </li>
             </ul>
 
@@ -1052,7 +1105,7 @@
         <div class="footer-bottom">
           <div class="auto-container">
             <div class="copyright">
-              &copy; 2022 Your Company. All Rights Reserved. Designed By
+              &copy; Bharat VoIP Communications Private Limited. All Rights Reserved. Designed By
               <a href="https://www.abhirambharadwaj10.netlify.app">Abhiram</a>
             </div>
           </div>

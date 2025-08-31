@@ -3433,6 +3433,22 @@
 
 ***/
 
+.service-list li {
+  position: relative;
+  padding-left: 25px; /* space for checkmark */
+  margin-bottom: 10px;
+  text-indent: -20px; /* pull first line back */
+}
+
+.service-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: red;
+  font-weight: bold;
+}
+
+
 .services-page-section{
 	position:relative;
 	padding:110px 0px 110px;
