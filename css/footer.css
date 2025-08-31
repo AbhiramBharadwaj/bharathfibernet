@@ -49,12 +49,13 @@
 .main-footer .contact-info-list li{
 	position:relative;
 	text-align:left;
-	line-height:1.9em;
+	line-height:1.2em;
 	color:var(--white-color);
 	padding-left:var(--padding-left-60);
 	margin-right:var(--margin-right-100);
 	margin-bottom:var(--margin-bottom-30);
 	display:inline-table;
+	font-size: 17px;
 }
 
 .main-footer .contact-info-list li:last-child{

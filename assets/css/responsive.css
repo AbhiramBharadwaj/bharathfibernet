@@ -379,6 +379,7 @@
 	
 	.main-footer .contact-info-list li{
 		margin-right:var(--margin-right-30);
+		font-size: 20px;
 	}
 	
 	.main-header .header-top .info li{
