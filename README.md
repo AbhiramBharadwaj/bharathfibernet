@@ -12,7 +12,7 @@ This site showcases services, pricing, e-commerce integration, and blog function
 - **Services Pages**
   - `services.html` – Grid of all available services.
   - `services-detail.html` – Detailed descriptions of enterprise VoIP, broadband, and cloud solutions. :contentReference[oaicite:2]{index=2}:contentReference[oaicite:3]{index=3}
-- **Pricing Page (`price.html`)** – Business and enterprise pricing plans.
+- **Pricing Page (`contact.html`)** – Business and enterprise pricing plans.
 - **Blog Section**
   - `blog.html` – Industry insights and company news feed.
   - `news-detail.html` – Full article view with images and metadata. :contentReference[oaicite:4]{index=4}:contentReference[oaicite:5]{index=5}
