@@ -58,136 +58,61 @@
 
 :root {
 	
-	/* #df0303 in decimal RGB */
-  --main-color: rgb(223,3,3);
+  /* =======  Logo–based Theme Colors  ======= */
+
+  /* warm orange from the logo */
+  --main-color: rgb(247,148,29);           /* #F7941D */
   
-  /* #010c3a in decimal RGB */
-  --main-color-two: rgb(1,12,58);
+  /* leafy green from the logo */
+  --main-color-two: rgb(47,124,60);        /* #2F7C3C */
   
-  /* #002d5b in decimal RGB */
+  /* transparent version of the orange for overlays */
+  --main-color-rgba: rgba(247,148,29,0.40);
+  
+  /* keep the other optional swatches if you want them for accents;
+     you can prune later if unused */
   --main-color-three: rgb(0,45,91);
-  
-  /* #ff6206 in decimal RGB */
-  --main-color-four: rgb(255,98,6);
-  
-  /* #f28e27 in decimal RGB */
-  --main-color-five: rgb(242,142,39);
-  
-  /* #173fcf in decimal RGB */
-  --main-color-six: rgb(23,63,207);
-  
-  /* #e503ee in decimal RGB */
+  --main-color-four:  rgb(255,98,6);
+  --main-color-five:  rgb(242,142,39);
+  --main-color-six:   rgb(23,63,207);
   --main-color-seven: rgb(229,3,238);
-  
-  /* #FFF1FF in decimal RGB */
   --main-color-eight: rgb(255,241,255);
+  --main-color-nine:  rgb(21,0,95);
+  --main-color-ten:   rgb(0,202,255);
+  --main-color-eleven:rgb(1,62,255);
+  --main-color-twelve:rgb(213,64,31);
+  --main-color-thirteen:rgb(24,156,252);
+  --main-color-fourteen:rgb(51,51,51);
+  --main-color-fifteen:rgb(205, 230, 42);
+  --main-color-sixteen:rgb(255,98,6);
+  --main-color-seventeen:rgb(67,37,104);
+  --main-color-eighteen:rgb(255,98,6);
+  --main-color-nineteen:rgb(255,98,6);
+  --main-color-twenty:rgb(68,68,69);
+  --main-color-twentyone:rgb(119,119,120);
+  --main-color-twentytwo:rgb(50,38,104);
   
-  /* #15005f in decimal RGB */
-  --main-color-nine: rgb(21,0,95);
-  
-  /* #00caff in decimal RGB */
-  --main-color-ten: rgb(0,202,255);
-  
-  /* #013eff in decimal RGB */
-  --main-color-eleven: rgb(1,62,255);
-  
-  /* #D54022 in decimal RGB */
-  --main-color-twelve: rgb(213,64,31);
-  
-  /* #189cfc in decimal RGB */
-  --main-color-thirteen: rgb(24,156,252);
-  
-  /* #333333 in decimal RGB */
-  --main-color-fourteen: rgb(51,51,51);
-  
-  /* #e62a5b in decimal RGB */
-  --main-color-fifteen: rgb(230,42,91);
-  
-  /* #bb0b0b in decimal RGB */
-  --main-color-sixteen: rgb(187,11,11);
-  
-  /* #432568 in decimal RGB */
-  --main-color-seventeen: rgb(67,37,104);
-  
-  /* #e52a5b in decimal RGB */
-  --main-color-eighteen: rgb(229,42,91);
-  
-  /* #e92a5b in decimal RGB */
-  --main-color-nineteen: rgb(233,42,91);
-  
-  /* #444445 in decimal RGB */
-  --main-color-twenty: rgb(68,68,69);
-  
-  /* #777778 in decimal RGB */
-  --main-color-twentyone: rgb(119,119,120);
-  
-  /* #322668 in decimal RGB */
-  --main-color-twentytwo: rgb(50,38,104);
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /* #00162b in decimal RGBA */
-  --main-color-rgba: rgb(223,3,3,0.40);
-  
-  /* #ffffff in decimal RGB */
+  /* =======  Base Neutrals  ======= */
+
   --white-color:rgb(255,255,255);
-  
-  /* #ffffff in decimal RGBA */
   --white-color-opicity:rgba(255,255,255,0.80);
-  
-  /* #ffffff in decimal RGBA Two */
   --white-color-opicity-two:rgba(255,255,255,0.40);
-  
-  /* #ffffff in decimal RGBA Three */
   --white-color-opicity-three:rgba(255,255,255,0.20);
-  
-  /* #000000 in decimal RGB */
+
   --black-color:rgb(0,0,0);
-  
-  /* #ffffff in decimal RGBA Two */
   --black-color-opicity:rgba(0,0,0,0.80);
-  
-  /* #ffffff in decimal RGBA Three */
   --black-color-opicity-two:rgba(0,0,0,0.40);
-  
-  /* #252525 in decimal RGB */
+
   --dark-color:rgb(37,37,37);
-  
-  /* #222222 in decimal RGB */
   --dark-color-two:rgb(34,34,34);
-  
-  /* #000522 in decimal RGB */
   --dark-color-three:rgb(0,5,34);
-  
-  /* #010101 Heading Color in decimal RGB */
-  --heading-color:rgb(1,1,1);
-  
-  /* #010101 Dark Color Two in decimal RGB */
-  --dark-color-two:rgb(1,1,1);
-  
-  /* #060b13 Dark Color Two in decimal RGB */
-  --dark-color-three:rgb(6,11,19);
-  
-  /* #010048 Dark Color Two in decimal RGB */
+  --heading-color:rgb(0,0,0);   /* use black for headings to match the logo text */
   --dark-color-four:rgb(1,0,72);
-  
-  /* #0E163D in decimal RGB */
   --dark-color-five:rgb(14,22,61);
-  
-  /* #0B1339 in decimal RGB */
   --dark-color-six:rgb(11,19,57);
-  
-  /* #070D31 in decimal RGB */
   --dark-color-seven:rgb(7,13,49);
-  
-  /* #181F43 in decimal RGB */
   --dark-color-eight:rgb(24,31,67);
+
   
   /* Fonts */
   --font-family-poppins: 'Poppins', sans-serif;
@@ -811,6 +736,7 @@ img{
 	text-transform: capitalize;
 	color: var(--white-color);
 	background-color:var(--main-color);
+	background-color: rgb(247,148,29) !important;
 }
 
 .btn-style-two:before{

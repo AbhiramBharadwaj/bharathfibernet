@@ -3114,6 +3114,7 @@
 .page-title h2{
 	color:var(--white-color);
 	padding-bottom:var(--padding-bottom-15);
+	color: rgb(247,148,29) !important;   /* logo orange */
 }
 
 .page-title .bread-crumb{
@@ -5629,7 +5630,7 @@
 .cart-table tbody tr .remove-btn{
 	position:relative;
 	font-size:20px;
-	color:#df0303;
+	color:#F7941D;
 	line-height:30px;
 	font-weight:400;
 	-webkit-transition:all 500ms ease;
@@ -5734,7 +5735,7 @@
 }
 
 .cart-section .btn-style-two:hover{
-	color:#ffffff;
+	color:#d17f0d;
 }
 
 .cart-section .cart-options .btn-style-one{
@@ -5799,7 +5800,7 @@
 .cart-table tbody tr .qty .quantity-spinner:focus,
 .cart-table tbody tr .qty .quantity-spinner:hover{
 	box-shadow:inherit;
-	border-color:#df0303;
+	border-color:#F7941D;
 }
 
 .cart-table tbody tr .qty .input-group-btn-vertical{
@@ -5872,7 +5873,7 @@
 }
 
 .checkout-page .default-links li a{
-	color:#df0303;
+	color:#F7941D;
 	text-decoration:underline;
 }
 
@@ -5972,7 +5973,7 @@
 .shop-form input:focus,
 .shop-form select:focus,
 .shop-form textarea:focus{
-	border-color:#df0303;	
+	border-color:#F7941D;	
 }
 
 /* Shop Order Box */
@@ -6063,7 +6064,7 @@
 	font-size:13px;
 	font-weight:600;
 	margin-left:0px;
-	color:#df0303;
+	color:#F7941D;
 	margin-top:20px;
 }
 

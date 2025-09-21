@@ -57,44 +57,60 @@
 
 :root {
 	
-	/* #df0303 in decimal RGB */
-  --main-color: rgb(223,3,3);
+	/* =======  Logo–based Theme Colors  ======= */
+
+  /* warm orange from the logo */
+  --main-color: rgb(247,148,29);           /* #F7941D */
   
-  /* #010c3a in decimal RGB */
-  --main-color-two: rgb(1,12,58);
+  /* leafy green from the logo */
+  --main-color-two: rgb(47,124,60);        /* #2F7C3C */
   
-  /* #00162b in decimal RGBA */
-  --main-color-rgba: rgb(223,3,3,0.40);
+  /* transparent version of the orange for overlays */
+  --main-color-rgba: rgba(247,148,29,0.40);
   
-  /* #ffffff in decimal RGB */
+  /* keep the other optional swatches if you want them for accents;
+     you can prune later if unused */
+  --main-color-three: rgb(0,45,91);
+  --main-color-four:  rgb(255,98,6);
+  --main-color-five:  rgb(242,142,39);
+  --main-color-six:   rgb(23,63,207);
+  --main-color-seven: rgb(229,3,238);
+  --main-color-eight: rgb(255,241,255);
+  --main-color-nine:  rgb(21,0,95);
+  --main-color-ten:   rgb(0,202,255);
+  --main-color-eleven:rgb(1,62,255);
+  --main-color-twelve:rgb(213,64,31);
+  --main-color-thirteen:rgb(24,156,252);
+  --main-color-fourteen:rgb(51,51,51);
+  --main-color-fifteen:rgb(205, 230, 42);
+  --main-color-sixteen:rgb(255,98,6);
+  --main-color-seventeen:rgb(67,37,104);
+  --main-color-eighteen:rgb(255,98,6);
+  --main-color-nineteen:rgb(255,98,6);
+  --main-color-twenty:rgb(68,68,69);
+  --main-color-twentyone:rgb(119,119,120);
+  --main-color-twentytwo:rgb(50,38,104);
+  
+  /* =======  Base Neutrals  ======= */
+
   --white-color:rgb(255,255,255);
-  
-  /* #ffffff in decimal RGBA */
   --white-color-opicity:rgba(255,255,255,0.80);
-  
-  /* #ffffff in decimal RGBA Two */
   --white-color-opicity-two:rgba(255,255,255,0.40);
-  
-  /* #000000 in decimal RGB */
+  --white-color-opicity-three:rgba(255,255,255,0.20);
+
   --black-color:rgb(0,0,0);
-  
-  /* #ffffff in decimal RGBA Two */
   --black-color-opicity:rgba(0,0,0,0.80);
-  
-  /* #ffffff in decimal RGBA Three */
   --black-color-opicity-two:rgba(0,0,0,0.40);
-  
-  /* #252525 in decimal RGB */
+
   --dark-color:rgb(37,37,37);
-  
-  /* #222222 in decimal RGB */
   --dark-color-two:rgb(34,34,34);
-  
-  /* #010101 Heading Color in decimal RGB */
-  --heading-color:rgb(1,1,1);
-  
-  /* #010101 Dark Color Two in decimal RGB */
-  --dark-color-two:rgb(1,1,1);
+  --dark-color-three:rgb(0,5,34);
+  --heading-color:rgb(0,0,0);   /* use black for headings to match the logo text */
+  --dark-color-four:rgb(1,0,72);
+  --dark-color-five:rgb(14,22,61);
+  --dark-color-six:rgb(11,19,57);
+  --dark-color-seven:rgb(7,13,49);
+  --dark-color-eight:rgb(24,31,67);
   
   
   /* Fonts */
@@ -692,7 +708,7 @@ img{
 
 /* Btn Style Two */
 
-.btn-style-two{
+.btn-style-two {
 	position: relative;
 	line-height: 30px;
 	font-weight:500;
@@ -705,10 +721,12 @@ img{
 	font-size: var(--font-16);
 	text-transform: capitalize;
 	color: var(--white-color);
-	background-color:var(--main-color);
+
+	/* force the orange background regardless of later overrides */
+	background-color: #F7941D !important;
 }
 
-.btn-style-two:before{
+.btn-style-two:before {
 	position: absolute;
 	content: '';
     top: 0;
@@ -723,31 +741,32 @@ img{
     transition: all 0.4s;
     -webkit-transform: scale(0.2, 1);
     transform: scale(0.2, 1);
-	background-color:var(--white-color);
+	background-color: var(--white-color);
 }
 
-.btn-style-two:hover::before{
-	opacity:1;
+.btn-style-two:hover::before {
+	opacity: 1;
 	-webkit-transform: scale(1, 1);
     transform: scale(1, 1);
 }
 
-.btn-style-two .txt{
-	position:relative;
-	z-index:1;
+.btn-style-two .txt {
+	position: relative;
+	z-index: 1;
 }
 
-.btn-style-two i{
-	position:relative;
-	top:2px;
-	font-style:normal;
-	line-height:1em;
-	margin-left:5px;
+.btn-style-two i {
+	position: relative;
+	top: 2px;
+	font-style: normal;
+	line-height: 1em;
+	margin-left: 5px;
 }
 
-.btn-style-two:hover{
-	color:var(--main-color-two);
+.btn-style-two:hover {
+	color: var(--main-color-two);
 }
+
 
 /* Btn Style Three */
 
