@@ -4155,7 +4155,12 @@ readers do not read off random characters that represent icons */
   content: "\f5f9";
 }
 
-.fa-instagram:before {
+.fa-<li>
+  <a href="https://www.linkedin.com/in/bharat-voip-communications-private-limited-595b82241/">
+    <span class="fa fa-linkedin"></span>
+  </a>
+</li>
+:before {
   content: "\f16d";
 }
 

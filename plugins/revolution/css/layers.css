@@ -1211,7 +1211,17 @@ website:   	http://www.themepunch.com
 	text-decoration:none;
 }
 
-.tp-caption.Instagram-Caption,.Instagram-Caption
+.tp-caption.<li>
+  <a href="https://www.linkedin.com/in/bharat-voip-communications-private-limited-595b82241/">
+    <span class="fa fa-linkedin"></span>
+  </a>
+</li>
+-Caption,.<li>
+  <a href="https://www.linkedin.com/in/bharat-voip-communications-private-limited-595b82241/">
+    <span class="fa fa-linkedin"></span>
+  </a>
+</li>
+-Caption
 {
 	background-color:transparent;
 	border-color:transparent;

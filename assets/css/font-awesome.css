@@ -1204,7 +1204,12 @@
 .fa-stack-overflow:before {
   content: "\f16c";
 }
-.fa-instagram:before {
+.fa-<li>
+  <a href="https://www.linkedin.com/in/bharat-voip-communications-private-limited-595b82241/">
+    <span class="fa fa-linkedin"></span>
+  </a>
+</li>
+:before {
   content: "\f16d";
 }
 .fa-flickr:before {

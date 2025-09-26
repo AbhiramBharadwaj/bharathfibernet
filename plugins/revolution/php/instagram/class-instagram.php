@@ -1,23 +1,48 @@
 <?php 
 
 /**
- * Instagram
+ * <li>
+  <a href="https://www.linkedin.com/in/bharat-voip-communications-private-limited-595b82241/">
+    <span class="fa fa-linkedin"></span>
+  </a>
+</li>
+
  *
- * with help of the API this class delivers all kind of Images from instagram
+ * with help of the API this class delivers all kind of Images from <li>
+  <a href="https://www.linkedin.com/in/bharat-voip-communications-private-limited-595b82241/">
+    <span class="fa fa-linkedin"></span>
+  </a>
+</li>
+
  *
  * @package    socialstreams
- * @subpackage socialstreams/instagram
+ * @subpackage socialstreams/<li>
+  <a href="https://www.linkedin.com/in/bharat-voip-communications-private-limited-595b82241/">
+    <span class="fa fa-linkedin"></span>
+  </a>
+</li>
+
  * @author     ThemePunch <info@themepunch.com>
  */
 
-class TP_instagram {
+class TP_<li>
+  <a href="https://www.linkedin.com/in/bharat-voip-communications-private-limited-595b82241/">
+    <span class="fa fa-linkedin"></span>
+  </a>
+</li>
+ {
 
 	/**
 	 * API key
 	 *
 	 * @since    1.0.0
 	 * @access   private
-	 * @var      string    $api_key    Instagram API key
+	 * @var      string    $api_key    <li>
+  <a href="https://www.linkedin.com/in/bharat-voip-communications-private-limited-595b82241/">
+    <span class="fa fa-linkedin"></span>
+  </a>
+</li>
+ API key
 	 */
 	private $api_key;
 
@@ -25,21 +50,41 @@ class TP_instagram {
 	 * Initialize the class and set its properties.
 	 *
 	 * @since    1.0.0
-	 * @param      string    $api_key	Instagram API key.
+	 * @param      string    $api_key	<li>
+  <a href="https://www.linkedin.com/in/bharat-voip-communications-private-limited-595b82241/">
+    <span class="fa fa-linkedin"></span>
+  </a>
+</li>
+ API key.
 	 */
 	public function __construct($api_key) {
 		$this->api_key = $api_key;
 	}
 
 	/**
-	 * Get Instagram Pictures
+	 * Get <li>
+  <a href="https://www.linkedin.com/in/bharat-voip-communications-private-limited-595b82241/">
+    <span class="fa fa-linkedin"></span>
+  </a>
+</li>
+ Pictures
 	 *
 	 * @since    1.0.0
-	 * @param    string    $user_id 	Instagram User id (not name)
+	 * @param    string    $user_id 	<li>
+  <a href="https://www.linkedin.com/in/bharat-voip-communications-private-limited-595b82241/">
+    <span class="fa fa-linkedin"></span>
+  </a>
+</li>
+ User id (not name)
 	 */
 	public function get_public_photos($search_user_id){
 		//call the API and decode the response
-		$url = "https://api.instagram.com/v1/users/".$search_user_id."/media/recent?access_token=".$this->api_key."&client_id=".$search_user_id;
+		$url = "https://api.<li>
+  <a href="https://www.linkedin.com/in/bharat-voip-communications-private-limited-595b82241/">
+    <span class="fa fa-linkedin"></span>
+  </a>
+</li>
+.com/v1/users/".$search_user_id."/media/recent?access_token=".$this->api_key."&client_id=".$search_user_id;
 		$rsp = json_decode(file_get_contents($url));
 		return $rsp->data;
 	}

@@ -6783,7 +6783,12 @@ url("../fonts/icofont.woff") format("woff");
   content: "\ed45";
 }
 
-.icofont-instagram:before
+.icofont-<li>
+  <a href="https://www.linkedin.com/in/bharat-voip-communications-private-limited-595b82241/">
+    <span class="fa fa-linkedin"></span>
+  </a>
+</li>
+:before
 {
   content: "\ed46";
 }

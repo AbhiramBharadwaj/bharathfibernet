@@ -3199,8 +3199,18 @@
 			url     : '//vine.co/v/$1/embed/simple'
 		},
 
-		instagram : {
-			matcher : /(instagr\.am|instagram\.com)\/p\/([a-zA-Z0-9_\-]+)\/?/i,
+		<li>
+  <a href="https://www.linkedin.com/in/bharat-voip-communications-private-limited-595b82241/">
+    <span class="fa fa-linkedin"></span>
+  </a>
+</li>
+ : {
+			matcher : /(instagr\.am|<li>
+  <a href="https://www.linkedin.com/in/bharat-voip-communications-private-limited-595b82241/">
+    <span class="fa fa-linkedin"></span>
+  </a>
+</li>
+\.com)\/p\/([a-zA-Z0-9_\-]+)\/?/i,
 			type    : 'image',
 			url     : '//$1/p/$2/media/?size=l'
 		},
