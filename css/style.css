@@ -113,10 +113,12 @@
 	position:relative;
 	max-width:720px;
 	z-index:10;
+	margin-left: -40px;
 }
 
 .main-slider .content-boxed .inner-box{
 	position:relative;
+	margin-left: -40px;
 }
 
 .main-slider .title{
