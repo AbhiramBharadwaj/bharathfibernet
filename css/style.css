@@ -161,7 +161,7 @@
 	margin-bottom:var(--margin-bottom-40);
 }
 
-.main-slider .active h1{
+.main-slider .active h1 {
 	opacity: 1;
 	transform: translateX(0px);
 	-webkit-transition-delay: 450ms;
@@ -12172,6 +12172,7 @@
 	color:var(--white-color);
 }
 
+
 /*** 
 
 ====================================================================
@@ -12705,4 +12706,8 @@
 	font-size: var(--font-22);
 	margin-right:var(--margin-right-20);
 	font-family: var(--font-family-poppins);
+}
+
+p{
+	color: var(--white-color);
 }
