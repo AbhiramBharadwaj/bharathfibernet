@@ -12711,3 +12711,616 @@
 p{
 	color: var(--white-color);
 }
+
+/* Enterprise Trust Section */
+.enterprise-trust-section {
+	position: relative;
+}
+
+.enterprise-trust-section .col-lg-2-4 {
+	flex: 0 0 20%;
+	max-width: 20%;
+}
+
+.enterprise-trust-section .trust-feature {
+	text-align: left;
+	min-height: 200px;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+	.enterprise-trust-section .col-lg-2-4 {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
+
+@media (max-width: 576px) {
+	.enterprise-trust-section .col-lg-2-4 {
+		flex: 0 0 100%;
+		max-width: 100%;
+		border-right: none !important;
+	}
+}
+
+/* Integrated Technology Section */
+.integrated-tech-section {
+	position: relative;
+}
+
+.integrated-tech-section .col-lg-service {
+	flex: 0 0 12.5%;
+	max-width: 12.5%;
+}
+
+.integrated-tech-section .service-details-table {
+	position: relative;
+}
+
+.integrated-tech-section .service-details-table table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 0 auto;
+	max-width: 900px;
+}
+
+.integrated-tech-section .service-details-table thead tr {
+	border-bottom: 2px solid #000;
+}
+
+.integrated-tech-section .service-details-table th {
+	text-align: left;
+	padding: 20px 30px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #000;
+}
+
+.integrated-tech-section .service-details-table tbody tr {
+	border-bottom: 1px solid #ddd;
+}
+
+.integrated-tech-section .service-details-table tbody tr:last-child {
+	border-bottom: none;
+}
+
+.integrated-tech-section .service-details-table td {
+	padding: 20px 30px;
+	color: #555;
+}
+
+.integrated-tech-section .service-details-table td:first-child {
+	font-weight: 600;
+	color: #000;
+	width: 35%;
+}
+
+.integrated-tech-section .service-details-table td:last-child {
+	width: 65%;
+}
+
+/* Responsive */
+@media (max-width: 1199px) {
+	.integrated-tech-section .col-lg-service {
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+}
+
+@media (max-width: 767px) {
+	.integrated-tech-section .col-lg-service {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+	
+	.integrated-tech-section .service-details-table th,
+	.integrated-tech-section .service-details-table td {
+		padding: 15px 20px;
+		font-size: 14px;
+	}
+	
+	.integrated-tech-section .service-details-table th {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 576px) {
+	.integrated-tech-section .col-lg-service {
+		flex: 0 0 100%;
+		max-width: 100%;
+		border-right: none !important;
+	}
+	
+	.integrated-tech-section .service-details-table {
+		overflow-x: auto;
+	}
+	
+	.integrated-tech-section .service-details-table th,
+	.integrated-tech-section .service-details-table td {
+		padding: 12px 15px;
+		font-size: 13px;
+	}
+	
+	.integrated-tech-section .service-details-table th {
+		font-size: 15px;
+	}
+}
+
+/* Plans For Everyone Section */
+.plans-everyone-section {
+	position: relative;
+}
+
+.plans-everyone-section .plan-tabs {
+	display: flex;
+	justify-content: center;
+	border: 2px solid #000;
+	padding: 0;
+	margin: 0 auto;
+	max-width: 800px;
+	list-style: none;
+}
+
+.plans-everyone-section .tab-item {
+	flex: 1;
+	text-align: center;
+	padding: 20px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	transition: all 0.3s ease;
+}
+
+.plans-everyone-section .tab-item:not(:last-child) {
+	border-right: 2px solid #000;
+}
+
+.plans-everyone-section .tab-item:hover {
+	background-color: #e8e9ea;
+}
+
+.plans-everyone-section .tab-item.active {
+	background-color: #f8f9fa;
+}
+
+.plans-everyone-section .plan-card {
+	background: linear-gradient(135deg, #f5e6e8 0%, #d4e4f7 100%);
+	border: 3px solid #1a1a2e;
+	border-radius: 10px;
+	padding: 30px 20px;
+	text-align: center;
+	min-height: 400px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plans-everyone-section .plan-card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.plans-everyone-section .plan-icon {
+	margin-bottom: 20px;
+}
+
+.plans-everyone-section .plan-icon img {
+	width: 50px;
+	height: 50px;
+}
+
+.plans-everyone-section .plan-card h4 {
+	font-size: 20px;
+	font-weight: 700;
+	color: #000;
+	margin-bottom: 10px;
+}
+
+.plans-everyone-section .plan-card ul {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 25px;
+	text-align: left;
+}
+
+.plans-everyone-section .plan-card ul li {
+	margin-bottom: 12px;
+	font-size: 14px;
+	color: #333;
+}
+
+.plans-everyone-section .plan-btn {
+	display: inline-block;
+	background-color: #e60000;
+	color: #fff;
+	padding: 12px 30px;
+	border-radius: 5px;
+	font-weight: 600;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+.plans-everyone-section .plan-btn:hover {
+	background-color: #cc0000;
+	color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+	.plans-everyone-section .plan-tabs {
+		flex-direction: column;
+		max-width: 100%;
+	}
+	
+	.plans-everyone-section .tab-item {
+		border-right: none !important;
+		border-bottom: 2px solid #000;
+	}
+	
+	.plans-everyone-section .tab-item:last-child {
+		border-bottom: none;
+	}
+	
+	.plans-everyone-section .plan-card {
+		margin-bottom: 20px;
+	}
+}
+
+/* Industry Leaders Section */
+.industry-leaders-section {
+	position: relative;
+}
+
+.industry-leaders-section .testimonials-container {
+	border: 3px solid #000;
+	padding: 40px;
+	background-color: #fff;
+}
+
+.industry-leaders-section .leader-testimonial-card {
+	position: relative;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.industry-leaders-section .leader-testimonial-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.industry-leaders-section .testimonial-content {
+	background-color: #f8f9fa;
+	padding: 30px;
+	border-radius: 8px 8px 0 0;
+	min-height: 220px;
+	margin-bottom: 0;
+	display: flex;
+	align-items: center;
+}
+
+.industry-leaders-section .testimonial-content p {
+	font-size: 15px;
+	color: #555;
+	line-height: 1.8;
+	margin: 0;
+}
+
+.industry-leaders-section .testimonial-author {
+	padding: 25px;
+	text-align: center;
+	border-radius: 0 0 8px 8px;
+	transition: background-color 0.3s ease;
+}
+
+.industry-leaders-section .testimonial-author h5 {
+	font-size: 22px;
+	font-weight: 700;
+	margin: 0 0 5px 0;
+}
+
+.industry-leaders-section .testimonial-author p {
+	font-size: 14px;
+	margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+	.industry-leaders-section .testimonials-container {
+		padding: 30px 20px;
+	}
+	
+	.industry-leaders-section .testimonial-content {
+		min-height: 200px;
+		padding: 25px;
+	}
+}
+
+@media (max-width: 767px) {
+	.industry-leaders-section .testimonials-container {
+		padding: 20px 15px;
+	}
+	
+	.industry-leaders-section .testimonial-content {
+		min-height: 180px;
+		padding: 20px;
+	}
+	
+	.industry-leaders-section .testimonial-content p {
+		font-size: 14px;
+	}
+	
+	.industry-leaders-section .testimonial-author {
+		padding: 20px;
+	}
+	
+	.industry-leaders-section .testimonial-author h5 {
+		font-size: 20px;
+	}
+}
+
+/* Need Guidance Section */
+.need-guidance-section {
+	position: relative;
+	background-color: #e8e9ea;
+}
+
+.need-guidance-section .contact-options {
+	display: flex;
+	justify-content: center;
+	gap: 60px;
+	margin-bottom: 40px;
+	flex-wrap: wrap;
+}
+
+.need-guidance-section .contact-option {
+	text-align: center;
+}
+
+.need-guidance-section .contact-option h5 {
+	font-size: 18px;
+	font-weight: 600;
+	color: #000;
+	margin: 0;
+}
+
+.need-guidance-section .guidance-form-wrapper {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.need-guidance-section .guidance-form input {
+	width: 100%;
+	padding: 15px 20px;
+	border: 2px solid #000;
+	border-radius: 5px;
+	font-size: 16px;
+	background-color: #fff;
+	transition: border-color 0.3s ease;
+}
+
+.need-guidance-section .guidance-form input:focus {
+	outline: none;
+	border-color: #0066cc;
+}
+
+.need-guidance-section .guidance-form button {
+	display: inline-block;
+	padding: 12px 40px;
+	background-color: #fff;
+	color: #000;
+	border: 2px solid #000;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.need-guidance-section .guidance-form button:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+.need-guidance-section .footer-info-section {
+	margin-top: 80px;
+	padding-top: 50px;
+	border-top: 2px solid #ccc;
+}
+
+.need-guidance-section .footer-info-column {
+	text-align: center;
+}
+
+.need-guidance-section .footer-info-column h5 {
+	font-size: 18px;
+	font-weight: 700;
+	color: #000;
+	margin-bottom: 20px;
+}
+
+.need-guidance-section .footer-info-column ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.need-guidance-section .footer-info-column ul li {
+	margin-bottom: 12px;
+}
+
+.need-guidance-section .footer-info-column a {
+	color: #555;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.need-guidance-section .footer-info-column a:hover {
+	color: #0066cc;
+}
+
+.need-guidance-section .footer-info-column p {
+	color: #555;
+	line-height: 1.8;
+	margin: 0;
+}
+
+.need-guidance-section .bottom-footer-links {
+	margin-top: 40px;
+	padding-top: 25px;
+	border-top: 1px solid #ccc;
+	text-align: center;
+}
+
+.need-guidance-section .bottom-footer-links a {
+	color: #555;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.need-guidance-section .bottom-footer-links a:hover {
+	color: #0066cc;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+	.need-guidance-section .contact-options {
+		gap: 30px;
+	}
+	
+	.need-guidance-section .guidance-form-wrapper {
+		padding: 0 15px;
+	}
+	
+	.need-guidance-section .guidance-form input {
+		padding: 12px 15px;
+		font-size: 14px;
+	}
+	
+	.need-guidance-section .guidance-form button {
+		padding: 10px 30px;
+		font-size: 14px;
+	}
+	
+	.need-guidance-section .footer-info-section {
+		margin-top: 50px;
+		padding-top: 30px;
+	}
+	
+	.need-guidance-section .bottom-footer-links {
+		font-size: 12px;
+	}
+	
+	.need-guidance-section .bottom-footer-links a {
+		display: block;
+		margin: 8px 0;
+	}
+}
+
+/* Featured Gaming Section */
+.featured-gaming-section {
+	position: relative;
+	overflow: hidden;
+}
+
+.featured-gaming-section .games-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.featured-gaming-section .game-card {
+	text-align: center;
+	transition: transform 0.3s ease;
+}
+
+.featured-gaming-section .game-card:hover {
+	transform: translateY(-10px);
+}
+
+.featured-gaming-section .game-card .game-image {
+	border-radius: 12px;
+	overflow: hidden;
+	margin-bottom: 15px;
+	box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-gaming-section .game-card:hover .game-image {
+	box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+	transform: scale(1.05);
+}
+
+.featured-gaming-section .game-card-large {
+	grid-row: span 2;
+}
+
+.featured-gaming-section .game-card h6 {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0;
+}
+
+.featured-gaming-section .view-more-btn {
+	display: inline-block;
+	background-color: #ff9800;
+	color: #fff;
+	padding: 15px 35px;
+	border-radius: 8px;
+	font-weight: 600;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	font-size: 16px;
+}
+
+.featured-gaming-section .view-more-btn:hover {
+	background-color: #f57c00;
+	color: #fff;
+	transform: translateX(5px);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+	.featured-gaming-section .gaming-content {
+		padding-right: 20px;
+		margin-bottom: 30px;
+	}
+	
+	.featured-gaming-section .games-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	
+	.featured-gaming-section .game-card-large {
+		grid-row: span 1;
+	}
+}
+
+@media (max-width: 767px) {
+	.featured-gaming-section {
+		padding: 60px 0;
+	}
+	
+	.featured-gaming-section .gaming-content {
+		padding-right: 0;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	
+	.featured-gaming-section .gaming-content h2 {
+		font-size: 36px;
+	}
+	
+	.featured-gaming-section .games-grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
+	}
+	
+	.featured-gaming-section .game-card h6 {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 576px) {
+	.featured-gaming-section .games-grid {
+		grid-template-columns: 1fr;
+	}
+}
